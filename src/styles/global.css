@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary: #30EA4D;
+    --primary-light: #0CCE2B;
+    --background: #161716;
+    --color: #FFFFFF;
+
+    --white: #FFFFFF;
+    --black: #161716;
+
+    --centered-width: 100%; /* Size of the content, the smaller the more margin they will have on the sides */
+    --content-padding: 0 1rem;
+
+    --title-font-weight: 700;
+    --font-weigth: 500;
+
+    --border-radius: 0.125rem;
+    --image-border-radius: 0.125rem;
+    --border-size: 2px;
+    --button-border-radius: var(--border-radius);
+
+    --navbar-bg: #1E1E20;
+    --navbar-height: 4rem;
+    --navbar-shadow: 0 0 4px 2px rgba(0,0,0,0.25);
+    --navbar-links-gap: 2rem;
+
+    --transition-duration: 200ms;
+}
+
+html {
+    font-size: 16px;
+    font-weight: var(--font-weigth);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, button, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: var(--background);
+    color: var(--color);
+}
+
+body {
+    position: relative
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--title-font-weight);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    width: 100%;
+    padding: var(--content-padding);
+}
+
+@media (min-width: 100%) {
+    .content {
+        width: var(--centered-width);
+        margin: auto;
+    }
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main > section {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.main > section:last-child {
+    margin-bottom: 0;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.title-margin {
+    margin-bottom: 1.5rem;
+}
+
+.colored-section {
+    color: var(--white);
+    background-color: var(--primary-light);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -7rem;
+    visibility: hidden;
+}
+

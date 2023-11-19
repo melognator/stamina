@@ -1,0 +1,33 @@
+---
+import Navbar from '../components/common/Navbar';
+import '../styles/global.css'
+import Hero from '../components/sections/Hero';
+import Information from '../components/sections/Information';
+import Pricing from '../components/sections/Pricing';
+import Footer from '../components/sections/Footer';
+
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Stamina</title>
+        <meta name="description" content="¡Descubrí el lugar donde se despierta tu mejor versión! Nuestro gimnasio ofrece entrenamientos de élite y un ambiente inspirador para alcanzar tus metas." />
+        
+	</head>
+	<body>
+        <a class='anchor' id='top' href='#'></a>
+		<Navbar client:visible />
+        <main class='main'>
+            <Hero />
+            <Information />
+            <Pricing />
+            <Footer />
+            
+        </main>
+        
+	</body>
+</html>

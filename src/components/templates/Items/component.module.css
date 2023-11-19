@@ -1,0 +1,42 @@
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.items article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.items img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: var(--image-border-radius);
+}
+
+.items h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.items p {
+    text-align: center;
+}
+
+@media (min-width: 512px) {
+    .items article {
+        width: 350px;
+    }
+}
+
+@media (min-width: 756px) {
+    .items article {
+        width: 250px;
+    }
+}

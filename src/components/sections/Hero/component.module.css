@@ -1,0 +1,131 @@
+section.container {
+    color: var(--white);
+    background-color: var(--black);
+    min-height: 30rem;
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/hero.webp');
+    background-size: cover;
+    background-position: center 0;
+    display: flex;
+    /* align-items: center; */
+}
+
+.content {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    /* padding-top: 3rem;
+    padding-bottom: 3rem; */
+    padding: 0;
+
+    text-align: center;
+}
+
+.content > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+    padding: 1rem;
+}
+
+.left {
+    width: 100%;
+}
+
+section.right {
+    background-image: url('/hero.webp');
+    background-size: cover;
+    background-position: center;
+    min-width: 0;
+    display: none;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    white-space: auto;
+    /* text-transform: capitalize; */
+}
+
+.content p {
+    font-size: 1rem;
+    max-width: 100%;
+    white-space: auto;
+    margin-bottom: 0.5rem;
+}
+
+.content strong {
+    font-weight: 900;
+}
+
+.left > a {
+    text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+    section.container {
+        background-position: center -50px;
+    }
+}
+
+@media (min-width: 500px) {
+    .content h2 {
+        white-space: pre;
+    }
+
+    .content p {
+        white-space: pre;
+    }
+}
+
+@media (min-width: 800px) {
+    .content h2 {
+        font-size: 3.5rem;
+    }
+
+    .content p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1150px) {
+    section.right {
+        min-width: 30rem;
+        display: flex;
+    }
+
+    section.container {
+        min-height: 30rem;
+        background-image: none;
+    }
+    .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .content h2 {
+        font-size: 3.5rem;
+    }
+
+    .content p {
+        font-size: 1.25rem;
+        max-width: 30rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    section.right {
+        min-width: 40rem;
+    }
+    section.container {
+        min-height: 40rem;
+    }
+}
